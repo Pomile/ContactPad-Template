@@ -1,0 +1,19 @@
+{
+  "name": "contactpad-template",
+  "version": "1.0.0",
+  "description": "Frontend template for contact pad app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pomile/ContactPad-Template.git"
+  },
+  "author": "Babatunde Ogedengbe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pomile/ContactPad-Template/issues"
+  },
+  "homepage": "https://github.com/Pomile/ContactPad-Template#readme"
+}
