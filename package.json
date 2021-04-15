@@ -28,11 +28,15 @@
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.4.1",
     "postcss": "^8.2.10",
+    "postcss-loader": "^5.2.0",
     "style-loader": "^2.0.0",
     "tailwindcss": "^2.1.1",
     "terser-webpack-plugin": "^5.1.1",
     "webpack": "^5.33.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
   }
 }

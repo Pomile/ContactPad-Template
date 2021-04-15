@@ -3,16 +3,19 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const dotenv = require("dotenv");
+const env = dotenv.config()
 
-const devMode = process.env.NODE_ENV !== 'production';
+const { NODE_ENV } = env;
+const devMode = NODE_ENV !== 'production';
 
 module.exports = {
-  mode: process.env.NODE_ENV,
+  mode: 'development',
   context: path.resolve(__dirname, 'src'),
   entry: {
     main: './index.js',
   },
-  devtool: devMode ? 'inline-source-map' : '',
+  devtool: devMode ? 'inline-source-map': '',
   devServer: {
     contentBase: __dirname,
     port: 9090,
@@ -42,6 +45,7 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
+          'postcss-loader'
         ],
       },
       {
@@ -79,6 +83,6 @@ module.exports = {
       template: 'index.html',
     }),
 
-    devMode ? new webpack.HotModuleReplacementPlugin() : '',
+    devMode ? new webpack.HotModuleReplacementPlugin(): "",
   ],
 };

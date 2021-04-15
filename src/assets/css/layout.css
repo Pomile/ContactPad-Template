@@ -1,0 +1,5 @@
+@layer header {
+  h2 {
+    @apply text-xl;
+  }
+}
