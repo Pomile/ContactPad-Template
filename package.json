@@ -4,7 +4,9 @@
   "description": "Frontend template for contact pad app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack ",
+    "start:dev-watch": "webpack --watch",
+    "start:dev": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,22 @@
   "bugs": {
     "url": "https://github.com/Pomile/ContactPad-Template/issues"
   },
-  "homepage": "https://github.com/Pomile/ContactPad-Template#readme"
+  "homepage": "https://github.com/Pomile/ContactPad-Template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.1",
+    "postcss": "^8.2.10",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.1.1",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
